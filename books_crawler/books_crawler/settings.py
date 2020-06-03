@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 
 # Scrapy settings for books_crawler project
 #
@@ -64,9 +65,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'books_crawler.pipelines.BooksCrawlerPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'books_crawler.pipelines.BooksCrawlerPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
